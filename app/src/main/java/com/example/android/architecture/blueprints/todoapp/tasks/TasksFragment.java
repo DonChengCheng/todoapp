@@ -77,7 +77,6 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     public void onResume() {
         super.onResume();
         mPresenter.start();
-        Log.w("", "i know");
     }
 
     @Override
