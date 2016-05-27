@@ -29,6 +29,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.PopupMenu;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -76,6 +77,7 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     public void onResume() {
         super.onResume();
         mPresenter.start();
+        Log.e("", "");
     }
 
     @Override
